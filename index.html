@@ -9,42 +9,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
     <!-- Bootstrap CSS linking -->
-    <link rel="stylesheet" style="text/css" href="frameworks/bootstrap-4.3.1-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="frameworks/bootstrap-4.3.1-dist/css/bootstrap.css"/>
+
+    <!-- Font Awesome CSS Linking -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Normal CSS linking -->
-    <link rel="stylesheet" href="index.css" style="text/css"/>
+    <link rel="stylesheet" href="index.css" type="text/css"/>
 
   </head>
 
   <body>
     <div class="top-nav">
-      <p class="border border-primary">This is the top navigation.</p>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <div class="dropdown">
+            <a style="padding: 0px 30px;" href="#">Global Song List <i class="fa fa-angle-down"></i></a>
+            <div class="dropdown-content">
+              <p><a class="dropdown-link" href="#">SOUND VOLTEX</a></p>
+              <p><a class="dropdown-link" href="#">DanceDanceRevolution <br/> (coming soon)</a></p>
+              <p><a class="dropdown-link" href="#">Beatmania IIDX <br/> (coming soon)</a></p>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">User List</a></li>
+        <div class="user-profile">
+          <li>
+            <div class="dropdown"><a href="#">
+              <img class="rounded-circle" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/ff/ffb8a90a8b934ac020dc89d07a074f9007abfcc1_full.jpg" alt="profile picture"/> Teddydtrefdasfd</a>
+              <div class="dropdown-content">
+                <p><a class="dropdown-link" href="user-song-list.html">Song List</a></p>
+                <p><a class="dropdown-link" href="#">Goals</a></p>
+                <p><a class="dropdown-link" href="#">Profile Settings</a></p>
+                <p><a class="dropdown-link" href="#">Logout</a></p>
+              </div>
+            </div>
+          </li>
+        </div>
+      </ul>
     </div>
-
+    <i class="fa fa-angle-down"></i>
     <div class="image-top">
-      <img src="https://placehold.it/1920x400/100"/>
+      <img src="resources/images/landing-page.png" alt="this is the landing page image"/>
     </div>
 
     <div class="body-content">
+      <div class="news-header">
+        <h2 style="text-align: center; padding-top: 10px;">News</h2>
+      </div>
       <div class="news">
-        <h2>News</h2>
-        <hr class="border-dark"/>
-        <div class="news-title">
-          <h3>Vestibulum ut neque sed risus porttitor ullamcorper.</h3>
-        </div>
-        <div class="news-content">
-          <p>
-            Quisque ac ipsum accumsan, lacinia risus nec, consectetur felis. Nullam a sem ultricies, malesuada felis et, ornare lacus.
-            Nunc in pretium enim. Nam non vehicula mauris, at porta felis. Quisque fermentum quam lacus, at interdum erat consequat et.
-            In mauris nisl, pellentesque vel bibendum ut, dictum ut odio. Mauris euismod facilisis nunc, vitae fringilla purus interdum ac.
-            Pellentesque iaculis turpis eu gravida dignissim. Etiam tristique metus a nunc tincidunt cursus. Vestibulum id interdum tellus,
-            sit amet mattis lectus. Quisque nec quam nulla. Proin sit amet massa vel diam tempor facilisis. Vivamus volutpat semper diam vel
-            luctus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque semper fringilla
-            accumsan. Nunc dapibus laoreet enim scelerisque bibendum. Curabitur pellentesque faucibus ipsum, ut laoreet arcu pretium sit amet.
-            Etiam sodales enim vitae justo convallis posuere. Fusce sodales pharetra nisl vel scelerisque. Nam eu tincidunt risus.
-          </p>
-          <p class="float-right"><a href="#">See More News</a></p>
-        </div>
+        <ul>
+          <li>
+            <div class="widget-img">
+              <img src="https://placehold.it/100/100" alt="placeholder">
+            </div>
+            <div class="news-content">
+              <h4>Donec rutrum molestie magna vitae tempus.</h4>
+              <p>Phasellus luctus elit sed nulla sollicitudin faucibus. Aenean
+                urna sem, tincidunt at molestie sed, ultricies ac dolor. Praesent
+                viverra aliquet libero ut condimentum.</p>
+                <hr class="news-hr border-dark">
+            </div>
+          </li>
+
+          <li>
+            <div class="widget-img">
+              <img src="https://placehold.it/100/100" alt="placeholder">
+            </div>
+            <div class="news-content">
+              <h4>In tincidunt scelerisque libero in imperdiet.</h4>
+              <p>
+                Ut et consectetur nisl, vel consequat arcu. Mauris consectetur
+                fermentum aliquam. Pellentesque a massa finibus, vulputate arcu
+                in, tincidunt risus.
+              </p>
+              <hr class="news-hr border-dark">
+            </div>
+          </li>
+
+          <li>
+            <div class="widget-img">
+              <img src="https://placehold.it/100/100" alt="placeholder">
+            </div>
+            <div class="news-content">
+              <h4>This is a new news post!</h4>
+              <p>Welcome everyone to this first news post! Today we are talking about BLAH BLAH BLAH AND MORE BLAH!</p>
+              <hr class="news-hr border-dark">
+            </div>
+          </li>
+
+          <li>
+            <div class="widget-img">
+              <img src="https://placehold.it/100/100" alt="placeholder">
+            </div>
+            <div class="news-content">
+              <h4>This is a new news post!</h4>
+              <p>Welcome everyone to this first news post! Today we are talking about BLAH BLAH BLAH AND MORE BLAH!</p>
+              <hr class="news-hr border-dark">
+            </div>
+          </li>
+
+
+          <li>
+            <div class="widget-img">
+              <img src="https://placehold.it/100/100" alt="placeholder">
+            </div>
+            <div class="news-content">
+              <h4>This is a new news post!</h4>
+              <p>Welcome everyone to this first news post! Today we are talking about BLAH BLAH BLAH AND MORE BLAH!</p>
+              <hr class="news-hr border-dark">
+            </div>
+          </li>
+
+
+          <li>
+            <div class="widget-img">
+              <img src="https://placehold.it/100/100" alt="placeholder">
+            </div>
+            <div class="news-content">
+              <h4>This is a new news post!</h4>
+              <p>Welcome everyone to this first news post! Today we are talking about BLAH BLAH BLAH AND MORE BLAH!</p>
+              <hr class="news-hr border-dark">
+            </div>
+          </li>
+        </ul>
+
       </div>
       <hr class="border-dark"/>
 
@@ -54,28 +144,28 @@
 
         <div class="game">
           <div class="song-card border border-dark rounded">
-            <img src="https://remywiki.com/images/thumb/2/2b/Boss_Rush.png/200px-Boss_Rush.png"/>
+            <img src="https://remywiki.com/images/thumb/2/2b/Boss_Rush.png/200px-Boss_Rush.png" alt="song-image"/>
             <div class="song-card-body">
               <p><a class="stretched-link" href="#">USAO - Boss Rush</a></p>
             </div>
           </div>
 
           <div class="song-card border border-dark rounded">
-            <img src="https://remywiki.com/images/thumb/e/e2/PUPA.png/200px-PUPA.png"/>
+            <img src="https://remywiki.com/images/thumb/e/e2/PUPA.png/200px-PUPA.png" alt="song-image"/>
             <div class="song-card-body">
               <p><a class="stretched-link" href="#">Morimori Akatsuki - PUPA</a></p>
             </div>
           </div>
 
           <div class="song-card border border-dark rounded">
-            <img src="https://remywiki.com/images/thumb/7/72/Embryo_MXM.png/200px-Embryo_MXM.png"/>
+            <img src="https://remywiki.com/images/thumb/7/72/Embryo_MXM.png/200px-Embryo_MXM.png" alt="song-image"/>
             <div class="song-card-body">
               <p><a class="stretched-link" href="#">かぼちゃ - Embryo</a></p>
             </div>
           </div>
 
           <div class="song-card border border-dark rounded">
-            <img src="https://remywiki.com/images/thumb/6/6b/Xronier_%28MXM%29.png/200px-Xronier_%28MXM%29.png"/>
+            <img src="https://remywiki.com/images/thumb/6/6b/Xronier_%28MXM%29.png/200px-Xronier_%28MXM%29.png" alt="song-image"/>
             <div class="song-card-body">
               <p><a class="stretched-link" href="#">かめりあ as "fluX Xroisé" - Xronier</a></p>
             </div>
@@ -89,7 +179,7 @@
 
 
     <!-- Bootstrap JavaScript scripts -->
-      <script src="frameworks\bootstrap-4.3.1-dist\js/bootstrap.bundle.js"></script>
+    <script src="frameworks/bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
 
 
 
