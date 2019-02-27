@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <title>User Song List | BST</title>
+
+    <!-- Required meta tags for bootstrap -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <!-- Normal CSS Linking -->
+    <link href="songs-and-goals.css" type="text/css" rel="stylesheet"/>
+    <link href="global.css" type="text/css" rel="stylesheet"/>
+    <link href="index.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Font Awesome CSS Linking -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS Linking -->
+    <link rel="stylesheet" type="text/css" href="frameworks/bootstrap-4.3.1-dist/css/bootstrap.css"/>
+
+  </head>
+
+  <body>
+    <div class="top-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <div class="dropdown">
+            <a style="padding: 0px 30px;" href="#">Global Song List <i class="fa fa-angle-down"></i></a>
+            <div class="dropdown-content">
+              <p style="padding-top: 15px;"><a class="dropdown-link" href="#">SOUND VOLTEX</a></p>
+              <p><a class="dropdown-link" href="#">DanceDanceRevolution <br/> (coming soon)</a></p>
+              <p><a class="dropdown-link" href="#">Beatmania IIDX <br/> (coming soon)</a></p>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">User List</a></li>
+        <div class="user-profile">
+          <li>
+            <div class="dropdown"><a href="#">
+              <img class="rounded-circle" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/ff/ffb8a90a8b934ac020dc89d07a074f9007abfcc1_full.jpg" alt="profile picture"/> Teddyaaaaaaaa</a>
+              <div class="dropdown-content">
+                <p><a class="dropdown-link" href="user-song-list.html">Song List</a></p>
+                <p><a class="dropdown-link" href="#">Goals</a></p>
+                <p><a class="dropdown-link" href="#">Profile Settings</a></p>
+                <p><a class="dropdown-link" href="#">Logout</a></p>
+              </div>
+            </div>
+          </li>
+        </div>
+      </ul>
+    </div>
+
+    <div class="body-content">
+      <div class="list-header border shadow p-2 mb-4 bg-white rounded-lg">
+        <img class="banner" src="resources/images/landing-page.png" style="width: 100%;" />
+        <ul>
+          <li><a href="#" class="selected">All Songs</a></li>
+          <li><a href="#">Collection 1</a></li>
+          <li><a href="#">Collection 2</a></li>
+          <li><a href="#">Collection 3</a></li>
+        </ul>
+      </div>
+
+      <form class="myForm border shadow p-2 mb-4 bg-white rounded-lg">
+        <div class="form-group">
+          <input type="text" class="form-control" aria-describedBy="searchBox" placeholder="Search For Songs"/>
+        </div>
+
+        <div class="form-group">
+          <select class="form-control">
+            <option>Level Select</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <select class="form-control">
+            <option>Clear Type</option>
+            <option>Perfect Ultimate Chain</option>
+            <option>Ultimate Chain</option>
+            <option>Excessive Clear</option>
+            <option>Clear</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <select class="form-control">
+            <option>Grade</option>
+            <option>S</option>
+            <option>AAA+</option>
+            <option>AAA</option>
+            <option>AA+</option>
+            <option>AA</option>
+            <option>A+</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+          </select>
+        </div>
+      </form>
+
+      <table class="song-table border shadow p-3 mb-5 bg-white rounded-lg">
+        <tr class="border">
+          <th class="border">#</th>
+          <th class="border">Jacket</th>
+          <th class="border">Artist</th>
+          <th class="border">Title</th>
+        </tr>
+        <div class="testing">
+          <tr class="border">
+            <td class="border link-box" style="width: 1%;"><a href="#" class="stretched-link">1</a></td>
+            <td class="border link-box" style="text-align: center; width: 1px;"><a href="#" class="stretched-link"><img src="https://remywiki.com/images/thumb/e/e2/PUPA.png/200px-PUPA.png" style="height: 2cm"/></a></td>
+            <td class="border link-box" style="width: 40%;"><a href="#" class="stretched-link">Morimori Akatsuki</a></td>
+            <td class="border link-box"><a href="#" class="stretched-link">PUPA</a></td>
+          </tr>
+        </div>
+        <tr class="border">
+          <td class="border" style="width: 1%;">2</td>
+          <td class="border" style="text-align: center; width: 1px;"><img src="https://remywiki.com/images/thumb/e/e4/Venomous_Firefly.png/200px-Venomous_Firefly.png" style="height: 2cm"/></td>
+          <td class="border" style="width: 40%;">かめりあ</td>
+          <td class="border">Venomous Firefly</td>
+        </tr>
+        <tr class="border">
+          <td class="border" style="width: 1%;">3</td>
+          <td class="border" style="text-align: center; width: 1px;"><img src="https://remywiki.com/images/thumb/4/40/A_Lasting_Promise_%28MXM%29.png/200px-A_Lasting_Promise_%28MXM%29.png"style="height: 2cm"/></td>
+          <td class="border" style="width: 40%;">Laur</td>
+          <td class="border">A Lasting Promise</td>
+        </tr>
+        <tr class="border">
+          <td class="border" style="width: 1%;">4</td>
+          <td class="border" style="text-align: center; width: 1px;"><img src="https://remywiki.com/images/thumb/3/38/Lachryma%28Re_Queen%27M%29_GRV.png/200px-Lachryma%28Re_Queen%27M%29_GRV.png"style="height: 2cm"/></td>
+          <td class="border" style="width: 40%;">かねこちはる</td>
+          <td class="border">Lachryma《Re:Queen’M》</td>
+        </tr>
+        <tr class="border">
+          <td class="border" style="width: 1%;">5</td>
+          <td class="border" style="text-align: center; width: 1px;"><img src="https://remywiki.com/images/thumb/a/a3/ILLness_LiLin_MXM.png/200px-ILLness_LiLin_MXM.png"style="height: 2cm"/></td>
+          <td class="border" style="width: 40%;">かねこちはる</td>
+          <td class="border">iLLness LiLin</td>
+        </tr>
+      </table>
+    </div>
+
+
+    <!-- Bootstrap JavaScript scripts -->
+    <script src="frameworks/bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
+
+  </body>
+</html>

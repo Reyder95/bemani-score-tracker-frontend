@@ -1,0 +1,45 @@
+.list-header {
+  margin-top: 20px
+}
+
+.list-header ul li {
+  display: inline-block;
+  padding: 7px 15px;
+  font-size: 23px;
+}
+
+.list-header ul li a {
+  text-decoration: none;
+}
+
+.song-table {
+  width: 100%;
+}
+
+.song-table th, .song-table td {
+  padding: 15px;
+}
+
+@media only screen and (max-width: 800px)
+{
+  .body-content {
+    margin: 0px;
+  }
+}
+
+.song-table a {
+  color: black;
+  text-decoration: none !important;
+}
+
+.link-box {
+  position: relative;
+}
+
+.selected {
+  border-bottom: solid 2px #123DB1 !important;
+}
+
+.list-header a:hover {
+  border-bottom: solid 2px #123DB1 !important;
+}

@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body-content {
+  margin: 0px 200px;
+}
+
+i {
+  padding-left: 6px;
+}
+
+.top-nav {
+  background: #201D1D;
+  width: 100%;
+}
+
+.top-nav ul {
+  padding: 10px 0px 15px 0px;
+}
+
+.top-nav ul li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+
+.dropdown-content p {
+  width: 100%;
+  float: none;
+  display: block;
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content p {
+  display: inline-block;
+  padding: 7px 12px;
+  background: #201D1D;
+}
+
+.top-nav ul li a {
+  text-decoration: none;
+  color: #BCBCBC;
+  font-size: 18px !important;
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+.top-nav ul li a:hover {
+  opacity: 1.0;
+  transition: 0.2s;
+}
+
+.user-profile {
+  float: right;
+  padding-right: 95px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.user-profile img {
+  height: 0.9cm;
+  margin-right: 10px;
+  vertical-align: middle;
+}
