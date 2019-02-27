@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="en">
   <head>
     <title>User Goal List | BST</title>
 
@@ -54,49 +54,57 @@
 
     <div class="body-content">
       <div class="list-header border shadow p-2 mb-4 bg-white rounded-lg">
-        <img class="banner" src="resources/images/landing-page.png" style="width: 100%;" />
+        <img class="banner" src="resources/images/landing-page.png" style="width: 100%;" alt="User Banner" />
       </div>
 
       <form class="myForm border shadow p-2 mb-4 bg-white rounded-lg">
         <div class="form-group">
-          <input type="text" class="form-control" aria-describedBy="searchBox" placeholder="Search For Songs"/>
+          <input name="keywords" type="text" class="form-control" placeholder="Search For Songs"/>
+        </div>
+
+        <div class="form-group">
+          <select class="form-control" name="level">
+            <option value="" disabled selected>Level Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+          </select>
         </div>
 
         <div class="form-group">
           <select class="form-control">
-            <option>Level Select</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
-            <option>10</option>
-            <option>11</option>
-            <option>12</option>
-            <option>13</option>
-            <option>14</option>
-            <option>15</option>
-            <option>16</option>
-            <option>17</option>
-            <option>18</option>
-            <option>19</option>
-            <option>20</option>
-          </select>
-        </div>
-
-        <div class="mb-0 form-group">
-          <select class="form-control">
-            <option>Goal Type</option>
+            <option value="" disabled selected>Goal Type</option>
             <option>Clear</option>
             <option>Hard Clear</option>
             <option>Score</option>
             <option>Full Combo</option>
             <option>Perfect</option>
           </select>
+        </div>
+
+        <div class="form-group">
+          <button name="reset" value="1" type="submit" class="btn btn-danger btn-block">Reset Search</button>
+        </div>
+
+        <div class="mb-0 form-group">
+          <button type="submit" class="btn btn-primary btn-block">Submit</button>
         </div>
       </form>
 
@@ -109,24 +117,21 @@
           <th class="border">Goal Type</th>
           <th class="border">Progress</th>
         </tr>
-        <div class="testing">
-          <tr class="border">
-            <td class="border link-box"><a href="#" class="stretched-link">1</a></td>
-            <td class="border link-box"><a href="#" class="stretched-link"><img src="https://remywiki.com/images/thumb/e/e2/PUPA.png/200px-PUPA.png" class="pr-2" style="height: 1cm;">Morimori Akatsuki - PUPA</a></td>
-            <td class="border link-box"><a href="#" class="stretched-link">16</a></td>
-            <td class="border link-box"><a href="#" class="stretched-link">I need to clear this damn fkn thing!</a></td>
-            <td class="border link-box"><a href="#" class="stretched-link">Clear</a></td>
-
-            <td class="border link-box"><a href="#" class="stretched-link" style="width: 20%;"></a>
-              <div class="progress">
-                <div class="progress-bar" style="width: 100%;" role="progressbar"></div>
-              </div>
-            </td>
-          </tr>
-        </div>
+        <tr class="border">
+          <td class="border">1</td>
+          <td class="border"><img src="https://remywiki.com/images/thumb/e/e2/PUPA.png/200px-PUPA.png" class="pr-2" style="height: 1cm;" alt="Song Jacket">Morimori Akatsuki - PUPA</td>
+          <td class="border link-box"><a href="#" class="stretched-link">16</a></td>
+          <td class="border">I NEED THE CLEAR</td>
+          <td class="border">Clear</td>
+          <td class="border link-box"><a href="#" class="stretched-link"></a>
+            <div class="progress">
+              <div class="progress-bar" style="width: 99%;" role="progressbar"></div>
+            </div>
+          </td>
+        </tr>
         <tr class="border">
           <td class="border">2</td>
-          <td class="border"><img src="https://remywiki.com/images/thumb/e/e4/Venomous_Firefly.png/200px-Venomous_Firefly.png" class="pr-2" style="height: 1cm;">かめりあ - Venomous Firefly</td>
+          <td class="border"><img src="https://remywiki.com/images/thumb/e/e4/Venomous_Firefly.png/200px-Venomous_Firefly.png" class="pr-2" style="height: 1cm;" alt="Song Jacket">かめりあ - Venomous Firefly</td>
           <td class="border link-box"><a href="#" class="stretched-link">18</a></td>
           <td class="border">Been trying to nab this 9.9m score for a while now...</td>
           <td class="border">Score</td>
@@ -138,7 +143,7 @@
         </tr>
         <tr class="border">
           <td class="border">3</td>
-          <td class="border"><img src="https://remywiki.com/images/thumb/4/40/A_Lasting_Promise_%28MXM%29.png/200px-A_Lasting_Promise_%28MXM%29.png" class="pr-2" style="height: 1cm;">Laur - A Lasting Promise</td>
+          <td class="border"><img src="https://remywiki.com/images/thumb/4/40/A_Lasting_Promise_%28MXM%29.png/200px-A_Lasting_Promise_%28MXM%29.png" class="pr-2" style="height: 1cm;" alt="Song Jacket">Laur - A Lasting Promise</td>
           <td class="border link-box"><a href="#" class="stretched-link">19</a></td>
           <td class="border">Been Wanting to clear this!</td>
           <td class="border">Clear</td>
@@ -150,7 +155,7 @@
         </tr>
         <tr class="border">
           <td class="border">4</td>
-          <td class="border"><img src="https://remywiki.com/images/thumb/3/38/Lachryma%28Re_Queen%27M%29_GRV.png/200px-Lachryma%28Re_Queen%27M%29_GRV.png" class="pr-2" style="height: 1cm;">かねこちはる - Lachryma《Re:Queen’M》</td>
+          <td class="border"><img src="https://remywiki.com/images/thumb/3/38/Lachryma%28Re_Queen%27M%29_GRV.png/200px-Lachryma%28Re_Queen%27M%29_GRV.png" class="pr-2" style="height: 1cm;" alt="Song Jacket">かねこちはる - Lachryma《Re:Queen’M》</td>
           <td class="border link-box"><a href="#" class="stretched-link">8</a></td>
           <td class="border">I want to clear this novice ... because ... why not?</td>
           <td class="border">Full Combo</td>
@@ -162,7 +167,7 @@
         </tr>
         <tr class="border">
           <td class="border">5</td>
-          <td class="border"><img src="https://remywiki.com/images/thumb/a/a3/ILLness_LiLin_MXM.png/200px-ILLness_LiLin_MXM.png" class="pr-2" style="height: 1cm;">かねこちはる - iLLness LiLin</td>
+          <td class="border"><img src="https://remywiki.com/images/thumb/a/a3/ILLness_LiLin_MXM.png/200px-ILLness_LiLin_MXM.png" class="pr-2" style="height: 1cm;" alt="Song Jacket">かねこちはる - iLLness LiLin</td>
           <td class="border link-box"><a href="#" class="stretched-link">20</a></td>
           <td class="border">FREEDOMMMMMMM!</td>
           <td class="border">Score</td>
