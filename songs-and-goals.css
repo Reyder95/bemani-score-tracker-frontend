@@ -20,8 +20,7 @@
   padding: 15px;
 }
 
-@media only screen and (max-width: 800px)
-{
+@media only screen and (max-width: 800px) {
   .body-content {
     margin: 0px;
   }
@@ -42,4 +41,22 @@
 
 .list-header a:hover {
   border-bottom: solid 2px #123DB1 !important;
+}
+
+.myForm form {
+  display: none;
+  opacity: 0;
+}
+
+.down {
+  text-align: center;
+  font-size: 25px;
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+.down:hover {
+  cursor: pointer;
+  opacity: 1.0;
+  transition: 0.2s;
 }

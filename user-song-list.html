@@ -19,6 +19,12 @@
     <!-- Bootstrap CSS Linking -->
     <link rel="stylesheet" type="text/css" href="frameworks/bootstrap-4.3.1-dist/css/bootstrap.css"/>
 
+    <!-- jQuery Linking -->
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+
+    <!-- Other Script Linking -->
+    <script src="resources/js/filterDropDown.js"></script>
+
   </head>
 
   <body>
@@ -63,70 +69,73 @@
         </ul>
       </div>
 
-      <form class="myForm border shadow p-2 mb-4 bg-white rounded-lg">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search For Songs"/>
-        </div>
+      <div class="myForm border shadow p-2 mb-4 bg-white rounded-lg">
+        <p class="down">Show Filters <br /> <i class="fa fa-angle-double-down"></i></p>
+        <form class="pt-2">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search For Songs"/>
+          </div>
 
-        <div class="form-group">
-          <select class="form-control" name="level">
-            <option value="" disabled selected>Level Select</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
-          </select>
-        </div>
+          <div class="form-group">
+            <select class="form-control" name="level">
+              <option value="" disabled selected>Level Select</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <select class="form-control">
-            <option value="" disabled selected>Clear Type</option>
-            <option>Perfect Ultimate Chain</option>
-            <option>Ultimate Chain</option>
-            <option>Excessive Clear</option>
-            <option>Clear</option>
-          </select>
-        </div>
+          <div class="form-group">
+            <select class="form-control">
+              <option value="" disabled selected>Clear Type</option>
+              <option>Perfect Ultimate Chain</option>
+              <option>Ultimate Chain</option>
+              <option>Excessive Clear</option>
+              <option>Clear</option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <select class="form-control">
-            <option value="" disabled selected>Grade</option>
-            <option>S</option>
-            <option>AAA+</option>
-            <option>AAA</option>
-            <option>AA+</option>
-            <option>AA</option>
-            <option>A+</option>
-            <option>A</option>
-            <option>B</option>
-            <option>C</option>
-          </select>
-        </div>
+          <div class="form-group">
+            <select class="form-control">
+              <option value="" disabled selected>Grade</option>
+              <option>S</option>
+              <option>AAA+</option>
+              <option>AAA</option>
+              <option>AA+</option>
+              <option>AA</option>
+              <option>A+</option>
+              <option>A</option>
+              <option>B</option>
+              <option>C</option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <button name="reset" value="1" type="submit" class="btn btn-danger btn-block">Reset Search</button>
-        </div>
+          <div class="form-group">
+            <button name="reset" value="1" type="submit" class="btn btn-danger btn-block">Reset Search</button>
+          </div>
 
-        <div class="mb-0 form-group">
-          <button type="submit" class="btn btn-primary btn-block">Submit</button>
-        </div>
-      </form>
+          <div class="mb-0 form-group">
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          </div>
+        </form>
+      </div>
 
       <table class="song-table border shadow p-3 mb-5 bg-white rounded-lg">
         <tr class="border">

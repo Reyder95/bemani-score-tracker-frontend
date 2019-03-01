@@ -4,7 +4,7 @@
 }
 
 .body-content {
-  margin: 0px 200px;
+  margin: 0 200px;
 }
 
 i {
@@ -17,12 +17,12 @@ i {
 }
 
 .top-nav ul {
-  padding: 10px 0px 15px 0px;
+  padding: 10px 0 15px;
 }
 
 .top-nav ul li {
   display: inline-block;
-  padding: 0px 10px;
+  padding: 0 10px;
 }
 
 .dropdown-content {
@@ -32,6 +32,7 @@ i {
 
 .dropdown-content p {
   width: 100%;
+  min-width: 150px;
   float: none;
   display: block;
   background-color: white;
