@@ -1,0 +1,32 @@
+.body-content p {
+    font-size: 23px;
+    margin-bottom: 125px;
+}
+
+.body-content img {
+    width: 150px;
+}
+
+.game-images {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+
+.supported-games p {
+    margin-bottom: 25px;
+}
+
+.supported-games img {
+    width: 300px;
+}
+
+footer {
+    height: 350px;
+    background-color: #7E7E7E;
+    border-top: 3px solid #7D0000;
+}

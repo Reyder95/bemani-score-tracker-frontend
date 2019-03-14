@@ -1,0 +1,78 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+}
+
+.body-content {
+    margin: 0 200px;
+    margin-top: 30px;
+}
+
+.top-nav {
+    background: #201D1D;
+    width: 100%;
+}
+
+.top-nav ul {
+    padding: 15px 15px;
+    margin-bottom: 0 !important;
+}
+
+.top-nav ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    color: #BCBCBC;
+    font-size: 18px !important;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.top-nav ul li a:hover {
+    opacity: 1.0;
+    transition: 0.2s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown-content p {
+    width: 100%;
+    min-width: 150px;
+    float: none;
+    display: block;
+    background-color: #FFF;
+    padding: 7px 12px;
+    background: #201D1D;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.user-profile {
+    float: right;
+    padding-right: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.user-profile img {
+    height: 0.9cm;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.user-profile .username {
+    text-align: right;
+}
+
+.global-song-list {
+    padding: 0px 30px;
+}
+
