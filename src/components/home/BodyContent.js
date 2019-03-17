@@ -1,13 +1,20 @@
-import React from 'react'
-import InfoTile from './InfoTile'
+import React from 'react' //Import react
+import InfoTile from './InfoTile' //Import the InfoTile component
+import SupportedGames from './SupportedGames' //Import the SupportedGames component
 
 class BodyContent extends React.Component {
     
+    //This is the main content for the home page
+
     render() {
         return (
-
-            //Multiple info tiles each with their own properties. Info gets sent to the InfoTile component
             <div className="body-content">
+
+                {/*
+                    The InfoTile component is a component that allows for the displaying
+                    of various information about the website on the front page.
+                */}
+
                 <InfoTile 
                 title="What is Bemani Score Tracker?"
                 imageSource="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/WPVG_icon_2016.svg/1024px-WPVG_icon_2016.svg.png"
@@ -50,19 +57,7 @@ class BodyContent extends React.Component {
                 "that the community wants, so we're more than happy to listen!"]}
                 />
 
-                <div className="supported-games">
-                    <h2>Our Current Plan For Game Support</h2>
-                    <hr className="border-secondary" />
-                    <div className="game-images">
-                        <img src="https://remywiki.com/images/thumb/2/29/SDVX_VIVID_WAVE.png/400px-SDVX_VIVID_WAVE.png" />
-                        <img src="https://remywiki.com/images/thumb/b/b2/IIDX_26_Rootage_logo.png/400px-IIDX_26_Rootage_logo.png" />
-                        <img src="https://upload.wikimedia.org/wikipedia/en/7/71/DDR_A_Logo.png" />
-                        <span className="stretch"></span>
-                    </div>
-                    <p>
-                        SOUND VOLTEX is the current priority as our initial game of choice. Following that will be Beatmania IIDX, then DanceDanceRevolution.
-                    </p>
-                </div>                
+                <SupportedGames />     
             </div>
         )
     }

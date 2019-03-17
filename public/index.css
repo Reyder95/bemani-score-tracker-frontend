@@ -3,18 +3,21 @@
     margin-bottom: 125px;
 }
 
+.landing-image {
+    width: 100%;
+}
+
 .body-content img {
     width: 150px;
+    display: flex;
+}
+
+.game-images img {
+    display: inline-block;
 }
 
 .game-images {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-
-    text-align: justify;
-    -ms-text-justify: distribute-all-lines;
-    text-justify: distribute-all-lines;
+    text-align: center;
 }
 
 .supported-games p {
@@ -29,4 +32,16 @@ footer {
     height: 350px;
     background-color: #7E7E7E;
     border-top: 3px solid #7D0000;
+}
+
+@media only screen and (max-width: 321px) {
+    .game-images img {
+        width: 250px;
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    .game-images img {
+        margin: 0 80px;
+    }
 }
