@@ -1,0 +1,107 @@
+.componentUserSongs, .componentUserGoals {
+    padding: 25px;
+    margin: 10px 100px;
+    background-color: white;
+}
+
+.top-banner {
+    height: 300px;
+    position: relative;
+}
+
+.top-banner .profile-username {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+.banner-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.profile-tabs {
+    margin-bottom: 30px;
+    background: linear-gradient(to right, rgb(175, 175, 175), rgb(80, 80, 80));    
+    padding: 10px;
+}
+
+.profile-tabs ul {
+    margin: 0;
+    margin-left: 15%;
+}
+
+.profile-tabs ul li {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+.profile-tabs ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: 0.2s;
+    padding-bottom: 2px;
+    padding-right: 5px;
+    padding-left: 5px;
+    opacity: 0.5;
+}
+
+.profile-tabs ul li a:hover {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.profile-username img {
+    height: 150px;
+    margin-right: 20px;
+}
+
+.profile-tabs a.active {
+    border-bottom: 3px solid #BCBBBB;
+    opacity: 1;
+}
+
+.tabcontent {
+    animation: fadeEffect 1s;
+    display: none;
+}
+
+#tabActivity {
+    display: block;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@media only screen and (max-width: 769px) {
+    
+    .top-banner .profile-username {
+        font-size: 30px;
+        text-align: center; 
+    }
+
+    .top-banner .profile-username img {
+        height: 100px;
+    }
+
+    .profile-tabs ul {
+       margin: 0;
+       text-align: center;
+       padding: 0;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    
+    .top-banner .profile-username {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,108 @@
+.button-div {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.pageHeader h2 {
+  text-align: center;
+}
+
+.pageHeader img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scores {
+  overflow-x: scroll;
+  margin: 0 50px 0 50px;
+}
+
+.difficultyTab {
+  background-color: grey;
+  padding: 30px;
+}
+
+.scoreTabContent {
+  display: none;
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.nov-button {
+  background-color: #5A2C76;
+  border: 1px solid #5A2C76;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.nov-button:hover {
+  background-color: #41145A;
+  border: 1px solid #41145A;
+}
+
+.adv-button {
+  background-color: #C2B700;
+  border: 1px solid #C2B700;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.adv-button:hover {
+  background-color: #8E7C00;
+  border-color: #8E7C00;
+}
+
+.exh-button {
+  background-color: #C20E00;
+  border: 1px solid #C20E00;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.exh-button:hover {
+  background-color: #970B00;
+  border-color: #970B00;
+}
+
+.mxm-button {
+  background-color: #AAAAAA;
+  border: 1px solid #AAAAAA;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.mxm-button:hover {
+  background-color: #7E7E7E;
+  border-color: #7E7E7E;
+}
+
+.scoreActive {
+  filter: brightness(65%);
+}
+
+#tabNovice {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .scores {
+    overflow-x: auto;
+  }
+
+  .nov-button,
+  .adv-button,
+  .exh-button,
+  .mxm-button {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+}

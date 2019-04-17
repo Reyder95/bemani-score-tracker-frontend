@@ -2,19 +2,19 @@ import React from 'react' //Import react
 import InfoTile from './InfoTile' //Import the InfoTile component
 import SupportedGames from './SupportedGames' //Import the SupportedGames component
 
-class BodyContent extends React.Component {
+class HomeBody extends React.Component {
     
     //This is the main content for the home page
 
     render() {
         return (
-            <div className="body-content">
+            <div className="componentHomeBody">
 
                 {/*
                     The InfoTile component is a component that allows for the displaying
                     of various information about the website on the front page.
                 */}
-
+                
                 <InfoTile 
                 title="What is Bemani Score Tracker?"
                 imageSource="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/WPVG_icon_2016.svg/1024px-WPVG_icon_2016.svg.png"
@@ -64,4 +64,4 @@ class BodyContent extends React.Component {
 
 }
 
-export default BodyContent
+export default HomeBody

@@ -1,0 +1,112 @@
+.componentUserActivity {
+    position: relative;
+}
+
+.user-feed {
+    margin: 0 500px;
+}
+
+.componentUserActivity p {
+    font-size: 20px;
+}
+
+.activity-blocks p {
+    margin-left: 20px;
+}
+
+.activityScores, .activityGoals {
+    margin-top: 20px;
+}
+
+.left {
+    margin-left: none;
+}
+
+.componentUserActivity p img {
+    width: 5%;
+}
+
+#activityImage, #activityText {
+    display: inline-block;
+}
+
+#activityText {
+    width: 80%;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 769px) {
+    .user-feed {
+        margin: 0 25px;
+    }
+
+    .user-feed p {
+        font-size: 17px;
+    }
+
+    .componentUserActivity {
+        position: static;
+    }
+
+    .user-statistics-container {
+        position: static !important;
+        top: auto;
+        width: 75% !important;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    #activityImage {
+        width: 30%;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1025px) {
+    .user-feed {
+        margin: 0 100px;
+    }
+
+    .componentUserActivity {
+        position: static;
+    }
+
+    .user-statistics-container {
+        position: static !important;
+        top: auto;
+        width: 50% !important;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+
+    .user-feed h2 {
+        margin-top: 50px;
+    }
+
+}
+
+.user-statistics-container {
+    width: 13%;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+
+.user-statistics {
+    background-color: #c1c1c1;
+}
+
+.user-statistics table {
+    width: 100%;
+}
+
+.user-statistics td {
+    padding: 15px 10px;
+    font-size: 15px;
+}
+
+.user-statistics td:nth-of-type(2) {
+    text-align: right;
+}

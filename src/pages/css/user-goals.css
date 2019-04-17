@@ -1,0 +1,84 @@
+.componentUserGoals table {
+    width: 100%;
+}
+
+.componentUserGoals td, .componentUserGoals th {
+    padding: 15px 10px;
+    position: relative;
+}
+
+.componentUserGoals tbody tr {
+    transition: 0.1s;
+}
+
+.componentUserGoals tbody tr:hover {
+    background-color: #CACACA;
+    transition: 0.1s;
+}
+
+.componentUserGoals table a {
+    text-decoration: none;
+    color: black;
+}
+
+.componentUserGoalsFilters {
+    width: 75%;
+    margin: auto;
+}
+
+.componentUserGoalsFilters .select-flex-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.componentUserGoalsFilters .select-flex-container .form-group:nth-of-type(1) {
+    width: 50%;
+    margin: 0 15px;
+}
+
+.componentUserGoalsFilters .select-flex-container .form-group:nth-of-type(2) {
+    width: 50%;
+    margin: 0 15px;
+}
+
+.componentUserGoalsFilters .select-flex-container .form-group:nth-of-type(3) {
+    width: 50%;
+    margin: 0 15px;
+}
+
+.componentUserGoalsFilters .input-buttons-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.componentUserGoalsFilters .input-buttons-flex input {
+    width: 25%;
+}
+
+.goalDate {
+    width: 10%;
+}
+
+.goalDescription {
+    width: 40%;
+}
+
+.goalType {
+    width: 5%;
+}
+
+.goalStatus {
+    width: 10%;
+}
+
+.goalProgress {
+    width: 20%;
+}
+
+.goalCount {
+    width: 10%;
+}
+
+.col-sm {
+    text-align: center;
+}

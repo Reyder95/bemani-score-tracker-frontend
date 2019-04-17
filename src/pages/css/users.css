@@ -1,0 +1,12 @@
+.users-table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+@media only screen and (max-width: 769px)
+{
+  .users-table {
+    width: 95%;
+  }
+}
