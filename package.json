@@ -23,5 +23,19 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "A website where bemani players may keep organized track of their own scores and goals. (Front end)",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reyder95/bemani-score-tracker-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Reyder95/bemani-score-tracker-frontend/issues"
+  },
+  "homepage": "https://github.com/Reyder95/bemani-score-tracker-frontend#readme"
 }

@@ -1,4 +1,4 @@
-.body-content p {
+.componentHomeBody p {
     font-size: 23px;
     margin-bottom: 125px;
 }
@@ -7,7 +7,12 @@
     width: 100%;
 }
 
-.body-content img {
+.componentHomeBody {
+    margin: 0px 50px;
+    margin-top: 30px;
+}
+
+.componentHomeBody img {
     width: 150px;
     display: flex;
 }
@@ -28,13 +33,21 @@
     width: 300px;
 }
 
+.jumbotron {
+    background-image: url('../../resources/jumbotron-background.png');
+    color: #fff;
+    text-align: center;
+}
+
+
+
 footer {
     height: 350px;
     background-color: #7E7E7E;
     border-top: 3px solid #7D0000;
 }
 
-@media only screen and (max-width: 321px) {
+@media only screen and (min-width: 321px) and (max-width: 1440px) {
     .game-images img {
         width: 250px;
     }
@@ -43,5 +56,9 @@ footer {
 @media only screen and (min-width: 1441px) {
     .game-images img {
         margin: 0 80px;
+    }
+
+    .componentHomeBody {
+        margin: 0px 200px;
     }
 }
