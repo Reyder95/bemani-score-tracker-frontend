@@ -1,5 +1,5 @@
 import React, { Component } from 'react' //Importing react
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom' //Importing the router
+import { BrowserRouter as Router, Route, Link, Redirect, Switch } from 'react-router-dom' //Importing the router
 import UserProfilePage from './pages/UserProfilePage' //Importing the user song list page
 import Home from './pages/Home' //Importing the homepage
 import GlobalSongList from './pages/GlobalSongList'
@@ -36,8 +36,45 @@ function openChoices() {
 //The whole application
 class App extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      items: [],
+      isLoaded: false
+    }
+  }
+
+  componentDidMount() {
+    fetch('http://127.0.0.1:1337/api/users')
+    .then(res => res.json())
+    .then(json => {
+      this.setState({
+        isLoaded: true,
+        items: json
+      });
+    });
+  }
+
   //Render this information
   render() {
+
+    /*var { isLoaded, items } = this.state;
+
+    if (!isLoaded) {
+      return <div>Loading...</div>
+    }
+    else {
+      return (
+        <ul>
+          {items.map(item => (
+            <li key={item.id}>
+              {item.username}
+            </li>
+          ))}
+        </ul>
+      )
+    }*/
+
 
     //Return the JSX (JavaScript HTML)
     return (
@@ -90,11 +127,13 @@ class App extends Component {
           </div>
 
           {/*Route a path to a component*/}
-          <Route exact path="/" component={Home} />
-          <Route path="/users/id" component={UserProfilePage} />
-          <Route path="/global-songs/sound-voltex" component={GlobalSongList} />
-          <Route path="/songs/id" component={SongsPage} />
-          <Route path="/users" component={UsersPage}/>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/users/id" component={UserProfilePage} />
+            <Route path="/global-songs/sound-voltex" component={GlobalSongList} />
+            <Route path="/songs/id" component={SongsPage} />
+            <Route path="/users" component={UsersPage}/>
+          </Switch>
         </div>
       </Router>
 

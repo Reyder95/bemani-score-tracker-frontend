@@ -1,10 +1,32 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import GlobalSongListFilters from '../components/global-song-list/GlobalSongListFilters'
+import GlobalSongListEntries from '../components/global-song-list/GlobalSongListEntries'
 import './css/global-song-list.css'
 
 
 class GlobalSongList extends React.Component {
+
+    constructor(props) {
+      super(props);
+
+      this.state = {
+        items: []
+      }
+    }
+
+    componentDidMount() {
+      fetch('http://127.0.0.1:1337/api/songs?p=1&e=10')
+      .then(res => res.json())
+      .then(json => {
+        this.setState({
+          items: json
+        });
+      });
+    }
     render() {
+      var items = this.state.items;
+
         return(
             <div className="componentGlobalSongList">
 
@@ -23,53 +45,14 @@ class GlobalSongList extends React.Component {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-bottom">
-                      <td>1</td>
-                      <td className="globalSongJacket"><img className="rounded" src="https://remywiki.com/images/thumb/e/e2/PUPA.png/200px-PUPA.png"/></td>
-                      <td>Morimori Atsushi</td>
-                      <td>PUPAasdasdasdasd</td>
-                      <td>SOUND VOLTEX IV: HEAVENLY HAVEN</td>
-                      <td>MXM 18 | EXH 16 | ADV 12 | NOV 6</td>
-                      <td className="globalSongAdd">
-                        <form>
-                          <select name="songAddDropdown">
-                            <option value="" selected disabled hidden>Add To Collection...</option>
-                          </select>
-                        </form>
-                      </td>
-                    </tr>
 
-                    <tr className="border-bottom">
-                      <td>2</td>
-                      <td className="globalSongJacket"><img className="rounded" src="https://remywiki.com/images/thumb/e/e2/PUPA.png/200px-PUPA.png"/></td>
-                      <td>Morimori Atsushi</td>
-                      <td>PUPAasdasdasdasd</td>
-                      <td>SOUND VOLTEX IV: HEAVENLY HAVEN</td>
-                      <td>MXM 18 | EXH 16 | ADV 12 | NOV 6</td>
-                      <td className="globalSongAdd">
-                        <form>
-                          <select name="songAddDropdown">
-                            <option value="" selected disabled hidden>Add To Collection...</option>
-                          </select>
-                        </form>
-                      </td>
-                    </tr>
+                    {items.map(item => (
 
-                    <tr className="border-bottom">
-                      <td>2</td>
-                      <td className="globalSongJacket"><img className="rounded" src="https://remywiki.com/images/thumb/e/e2/PUPA.png/200px-PUPA.png"/></td>
-                      <td>Morimori Atsushi</td>
-                      <td>PUPAasdasdasdasd</td>
-                      <td>SOUND VOLTEX IV: HEAVENLY HAVEN</td>
-                      <td>MXM 18 | EXH 16 | ADV 12 | NOV 6</td>
-                      <td className="globalSongAdd">
-                        <form>
-                          <select name="songAddDropdown">
-                            <option value="" selected disabled hidden>Add To Collection...</option>
-                          </select>
-                        </form>
-                      </td>
-                    </tr>
+                      <GlobalSongListEntries
+                      song={item}
+                      />
+                    )
+                  )}
                   </tbody>
                 </table>
               </div>
