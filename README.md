@@ -8,6 +8,8 @@ Currently we only plan to support active Bemani titles, though this might change
   - Beatmania IIDX (Following Up)
   - DanceDanceRevolution (Following Up)
   
+  ### Due to difficulties with the site, supporting more than SOUND VOLTEX may prove to be a challenge, so unless we can get a team that can help maintain a DB for another game, we will just keep this sound voltex related.
+  
 ### Adding Song To Your Profile
 You are able to add songs to your profile to begin placing scores on them. This system also allows you to build collections of songs, so you can organize your song list more neatly. This allows you to give a bit of character to yourself to show people what songs you enjoy playing, or what songs you play at all.
 
