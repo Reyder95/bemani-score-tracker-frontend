@@ -7,13 +7,15 @@ class GlobalSongListEntries extends React.Component {
   render() {
     return (
       <tr className="border-bottom">
-        <td className="gsl-number">{this.props.song.id}</td>
-        <td className="globalSongJacket"><img className="rounded" src={this.props.song.jacketlink}/></td>
-        <td className="gsl-artist">{this.props.song.artist}</td>
-        <td className="gsl-title">{this.props.song.title}</td>
-        <td className="gsl-game">{this.props.song.gameversion}</td>
+        <td className="gsl-number"><div>{this.props.song.id}</div></td>
+        <td className="globalSongJacket"><div><img className="rounded" src={this.props.song.jacketlink}/></div></td>
+        <td className="gsl-artist"><div>{this.props.song.artist}</div></td>
+        <td className="gsl-title"><div>{this.props.song.title}</div></td>
+        <td className="gsl-game"><div>{this.props.song.gameversion}</div></td>
         <td className="gsl-levels pb-3 pt-3">
-        {this.props.song.charts.map(item => (<ChartRenderer chart={item}/>))}
+          <div>
+            {this.props.song.charts.map(item => (<ChartRenderer chart={item}/>))}
+          </div>
         </td>
         <td className="globalSongAdd">
           <form>
