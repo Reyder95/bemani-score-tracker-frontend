@@ -10,13 +10,18 @@
     text-align: center;
 }
 
+.componentGlobalSongList table td div {
+  height: 100px;
+  overflow: hidden;
+}
+
 .globalSongJacket {
-    text-align: center;
     padding: 10px;
 }
 
 .globalSongJacket img {
-    width: 20%;
+    width: 30%;
+    vertical-align: middle;
 }
 
 .componentGlobalSongListFilters {
@@ -51,4 +56,8 @@
 
 .componentGlobalSongListFilters .input-buttons-flex input {
     width: 25%;
+}
+
+.navigator button {
+  width: 15%;
 }
